@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+.App-title{
+  font-family: Montserrat;
+  font-weight: 300;
+  color: rgb(0, 0, 29);
+  font-size: 2.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-logo{
+  width:12; 
+  height:5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-text{
+  font-family: Montserrat;
+  font-weight: 200;
+  color: rgb(0, 0, 29);
+  font-size: medium;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App-button{
+  border: 0.5px solid  white;
+  background-color: rgb(0, 0, 102);
   color: white;
+  width: 10.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.App-button:hover{
+  background-color:#273bd3;
+  color: white;
+  transition: 0.2s ease-in-out
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-container{
+  display:none
+}
+
+.App-background{
+  background-color: rgb(0, 0, 29); 
+}
+
+.App-input{
+  border: none;
+}
+
+.App-search{
+  background-color: transparent !important;
+  border: none;
+}
+
+.App-form{
+  width: 100%;
+}
+
+@media(min-width:768px){
+  .App-form{
+    width: 50%;
+  }  
+
+  .App-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 29); 
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-button{
+    border: 0.5px solid  white;
+    background-color: rgb(0, 0, 102);
+    color: white;
+    width: 20rem;
+  }
+
+  .App-text{
+    font-family: Montserrat;
+    font-weight: 200;
+    color: rgb(0, 0, 29);
+    font-size: larger;
+    width: 100%;
+  }
+}
+
+@media(min-width:992px){
+  .dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+    border-radius: 2%;
+  }
+  
+  .dropdown .dropdown-menu{
+    display: none;
+  }
+
+  .App-logo{
+    width:18rem; 
+    height:5rem;
   }
 }
